@@ -10,7 +10,7 @@ public class KanaAppraiser
     public static final char ZENKAKU_HIRAGANA_FIRST = 'ぁ';             // U+3041
     public static final char ZENKAKU_HIRAGANA_LAST_FOR_CONVERT  = 'ん'; // U+3093
     public static final char ZENKAKU_HIRAGANA_LAST  = 'ゖ';             // U+3096
-
+    public static final char ZENKAKU_HIRAGANA_LAST1  = 'ゖ';             // U+3096
 
     //// Bounds for Katakana
     public static final char HANKAKU_KATAKANA_FIRST = 'ｦ';              // U+FF66
@@ -170,6 +170,7 @@ public class KanaAppraiser
         && eval_char <= ZENKAKU_NUMBER_LAST) {
             return true;
         }
+     System.out.println("test");
         return false;
     }
     //}}}
@@ -210,6 +211,7 @@ public class KanaAppraiser
     //{{{ boolean isHankakuAscii(char)
     public static boolean isHankakuAscii(char eval_char)
     {
+     System.out.println("test");
         if(eval_char >= HANKAKU_ASCII_FIRST
         && eval_char <= HANKAKU_ASCII_LAST) {
             return true;
@@ -222,6 +224,7 @@ public class KanaAppraiser
     //{{{ boolean isZenkakuAscii(char)
     public static boolean isZenkakuAscii(char eval_char)
     {
+      System.out.println("update");
         if(eval_char >= ZENKAKU_ASCII_FIRST
         && eval_char <= ZENKAKU_ASCII_LAST) {
             return true;
